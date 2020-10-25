@@ -1,0 +1,10 @@
+version: "3.4"
+
+services:
+    container_name: quickstart_api_rust
+    build:
+        context: .
+        dockerfile: .docker/Dockerfile-dev
+    ports:
+        - 9000:9000 # http server
+        - 2345:2345 # debug
